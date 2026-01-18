@@ -1,0 +1,18 @@
+[package]
+name = "yet-another-transactions-processor"
+version = "0.1.0"
+edition = "2024"
+
+[lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+
+[dependencies]
+csv = "1.4.0"
+env_logger = "0.11.8"
+log = "0.4.29"
+rust_decimal = "1.40.0"
+serde = { version = "1.0.228", features = ["derive"] }
+anyhow = "1"
+
+[dev-dependencies]
+tempfile = "3.24.0"
